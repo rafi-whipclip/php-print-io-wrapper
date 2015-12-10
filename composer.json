@@ -1,5 +1,5 @@
 {
-    "name": "TalalM/php-print-io-wrapper",
+    "name": "talalm/php-print-io-wrapper",
     "description": "PHP wrapper for the print.io API",
     "require": {
         "php": ">=5.3.0",
