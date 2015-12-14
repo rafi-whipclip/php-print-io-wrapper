@@ -34,6 +34,7 @@ return array(
 
     "services" => array(
         "preconfiguredproducts",
+        "products",
     ),
 
     /*
