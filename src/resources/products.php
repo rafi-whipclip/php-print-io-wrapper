@@ -51,10 +51,10 @@ return array(
                     "default" => "EUR",
                 ),
                 "all" => array(
-                    "type" => "boolean",
+                    "type" => "integer",
                     "location" => "query",
                     "description" => "Set this to TRUE if you want to receive all Products that we have made public",
-                    "default" => false,
+                    "default" => 0,
                 ),
             )
         ),
@@ -103,10 +103,10 @@ return array(
                     "default" => "EUR",
                 ),
                 "all" => array(
-                    "type" => "boolean",
+                    "type" => "integer",
                     "location" => "query",
                     "description" => "Set this to TRUE if you want to receive all Products that we have made public",
-                    "default" => false,
+                    "default" => 0,
                 ),
             )
         ),
