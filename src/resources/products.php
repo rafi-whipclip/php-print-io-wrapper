@@ -118,7 +118,7 @@ return array(
          */
         "getProductTemplates" => array(
             "httpMethod" => "GET",
-            "uri" => "ProductVariants",
+            "uri" => "producttemplates",
             "summary" => "Get a list of product templates for a specific product variant (product SKU)",
             "responseModel" => "defaultJsonResponse",
             "parameters" => array(
