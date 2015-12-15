@@ -103,6 +103,68 @@ return array(
             ),
         ),
 
+        /**
+         *    updatePrintReadyProduct() method
+         *
+         *    reference: https://www.makeable.com/api-docs/curl/#print-ready-products
+         */
+
+        "updatePrintReadyProduct" => array(
+            "httpMethod" => "PUT",
+            "uri" => "preconfiguredproducts",
+            "summary" => "Update a print ready (pre-configured) product in your recipe",
+            "responseModel" => "defaultJsonResponse",
+            "parameters" => array(
+                "SKU" => array(
+                    "type" => "string",
+                    "location" => "json",
+                    "description" => "Set a SKU that uniquely identifies the Print Ready product. This must be unique for each Print Ready Product",
+                    "required" => true,
+                ),
+                "Name" => array(
+                    "type" => "string",
+                    "location" => "json",
+                    "description" => "Set the name of the Print Ready Product",
+                    "required" => true,
+                ),
+                "Description" => array(
+                    "type" => "string",
+                    "location" => "json",
+                    "description" => "Set the description for the Print Ready Product",
+                    "required" => true,
+                ),
+                "Items" => array(
+                    "location" => "json",
+                    "parameters" => array(
+                        "ProductId" => array(
+                            "type" => "string",
+                            "location" => "json",
+                            "description" => "The ID of the product this item is a variant of",
+                            "required" => true,
+                        ),
+                        "ProductVariantSKU" => array(
+                            "type" => "string",
+                            "location" => "json",
+                            "description" => "The SKU of the product this item is a Print Ready version of",
+                            "required" => true,
+                        ),
+                        "Preconfigurations" => array(
+                            "location" => "json",
+                            "parameters" => array(
+                                "Url" => array(
+                                    "type" => "string",
+                                    "location" => "json",
+                                    "description" => "The url of the image in the referenced space/layer. This image should be formatted to the correct Print Ready Image size",
+                                    "required" => true,
+                                ),
+                            ),
+                            "required" => true,
+                        ),
+                    ),
+                    "required" => true,
+                )
+            ),
+        ),
 
     ),
 
